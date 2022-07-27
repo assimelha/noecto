@@ -7,7 +7,7 @@ environment:
 
 on:
   push:
-    branches: .*
+    - branches: .*
 
 pipeline:
   - name: Install Dependencies
