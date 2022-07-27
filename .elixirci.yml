@@ -1,0 +1,17 @@
+version: 1
+
+environment:
+  elixir: 1.13
+  otp: 25
+  node: 18
+
+on:
+  push:
+    branches: .*
+
+pipeline:
+  - name: Install Dependencies
+    cmd: mix deps.get
+
+  - name: Run Tests
+    cmd: mix test
