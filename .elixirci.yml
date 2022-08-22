@@ -2,7 +2,7 @@ version: 1
 
 environment:
   elixir: 1.13
-  otp: 25
+  otp: 25.0
   node: 18
 
 on:
